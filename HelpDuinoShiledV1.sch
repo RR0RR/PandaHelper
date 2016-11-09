@@ -2767,25 +2767,7 @@ drill 1.3 mm</description>
 <part name="LSP2" library="solpad" deviceset="SE13" device=""/>
 <part name="LSP3" library="solpad" deviceset="SE13" device=""/>
 <part name="LSP4" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP5" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP6" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP7" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP8" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP9" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP10" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP11" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP12" library="solpad" deviceset="SE13" device=""/>
 <part name="LSP13" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP14" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP15" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP16" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP17" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP18" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP19" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP20" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP21" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP22" library="solpad" deviceset="SE13" device=""/>
-<part name="LSP23" library="solpad" deviceset="SE13" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2809,25 +2791,7 @@ drill 1.3 mm</description>
 <instance part="LSP2" gate="1" x="53.34" y="-25.4"/>
 <instance part="LSP3" gate="1" x="58.42" y="-25.4"/>
 <instance part="LSP4" gate="1" x="63.5" y="-25.4"/>
-<instance part="LSP5" gate="1" x="68.58" y="-25.4"/>
-<instance part="LSP6" gate="1" x="73.66" y="-25.4"/>
-<instance part="LSP7" gate="1" x="78.74" y="-25.4"/>
-<instance part="LSP8" gate="1" x="83.82" y="-25.4"/>
-<instance part="LSP9" gate="1" x="48.26" y="-33.02"/>
-<instance part="LSP10" gate="1" x="53.34" y="-33.02"/>
-<instance part="LSP11" gate="1" x="58.42" y="-33.02"/>
-<instance part="LSP12" gate="1" x="63.5" y="-33.02"/>
 <instance part="LSP13" gate="1" x="68.58" y="-33.02"/>
-<instance part="LSP14" gate="1" x="73.66" y="-33.02"/>
-<instance part="LSP15" gate="1" x="76.2" y="-33.02"/>
-<instance part="LSP16" gate="1" x="78.74" y="-33.02"/>
-<instance part="LSP17" gate="1" x="81.28" y="-33.02"/>
-<instance part="LSP18" gate="1" x="83.82" y="-33.02"/>
-<instance part="LSP19" gate="1" x="86.36" y="-33.02"/>
-<instance part="LSP20" gate="1" x="91.44" y="-30.48"/>
-<instance part="LSP21" gate="1" x="96.52" y="-30.48"/>
-<instance part="LSP22" gate="1" x="101.6" y="-27.94"/>
-<instance part="LSP23" gate="1" x="104.14" y="-27.94"/>
 </instances>
 <busses>
 </busses>
