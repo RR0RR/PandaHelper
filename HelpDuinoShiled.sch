@@ -6237,7 +6237,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="PC5" library="Connector" deviceset="HEADER-8P" device="-2.54" value="DNP"/>
 <part name="PC4" library="Connector" deviceset="HEADER-6P" device="-65/35MIL" value="DNP"/>
 <part name="PC1" library="Connector" deviceset="HEADER-10P" device="-2.54" value="DNP"/>
-<part name="LSP1" library="solpad" deviceset="SE13" device=""/>
 <part name="LSP2" library="solpad" deviceset="SE13" device=""/>
 <part name="LSP3" library="solpad" deviceset="SE13" device=""/>
 <part name="LSP4" library="solpad" deviceset="SE13" device=""/>
@@ -6266,7 +6265,6 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="39.37" y="16.51" size="1.27" layer="96" rot="MR270"/>
 </instance>
 <instance part="PC1" gate="J" x="33.02" y="10.16"/>
-<instance part="LSP1" gate="1" x="48.26" y="-25.4"/>
 <instance part="LSP2" gate="1" x="53.34" y="-25.4"/>
 <instance part="LSP3" gate="1" x="58.42" y="-25.4"/>
 <instance part="LSP4" gate="1" x="63.5" y="-25.4"/>
@@ -6358,6 +6356,16 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="PC5" gate="J" pin="5"/>
 <wire x1="50.8" y1="40.64" x2="54.61" y2="40.64" width="0.1524" layer="91"/>
 <label x="55.88" y="40.64" size="1.27" layer="95" ratio="10"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="VOUT"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="233.68" y1="30.48" x2="243.84" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="27.94" x2="243.84" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="243.84" y1="30.48" x2="254" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="254" y1="30.48" x2="254" y2="27.94" width="0.1524" layer="91"/>
+<label x="254" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_PWR" class="0">
@@ -6873,18 +6881,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="PC5" gate="J" pin="1"/>
 <wire x1="50.8" y1="30.48" x2="54.61" y2="30.48" width="0.1524" layer="91"/>
 <label x="55.88" y="30.48" size="1.27" layer="95" ratio="10"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="VOUT"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="233.68" y1="30.48" x2="243.84" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="243.84" y1="27.94" x2="243.84" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="243.84" y1="30.48" x2="254" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="254" y1="30.48" x2="254" y2="27.94" width="0.1524" layer="91"/>
-<label x="254" y="30.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
