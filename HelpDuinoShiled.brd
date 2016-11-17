@@ -166,22 +166,6 @@
 <wire x1="66.04" y1="57.4891875" x2="65.55985" y2="58.643" width="0" layer="20" curve="45.18862"/>
 <wire x1="65.55985" y1="58.643" x2="65.27946875" y2="58.921540625" width="0" layer="20"/>
 <wire x1="65.27946875" y1="58.921540625" x2="63.43983125" y2="59.68" width="0" layer="20" curve="44.811368"/>
-<text x="73.47" y="33.21" size="1.778" layer="48">56mm entre conector chico y grande
-Entre parte de afuera
-
-Cada pieza mide 5mm de ancho
-
-Centro a centro = 46mm
-56mm -10mm = 46mm
-
-19mm desde parte de arriba
-dual pin is @ 22mm from border
-Short ISP is @ 9mm from border
-Short ISP header is 8mm long
-Long double is 31mm len
-
-22-9-4 = 9
-9+15.5 = 32.5</text>
 <text x="3.9624" y="32.9184" size="1.778" layer="21" rot="R90">By:</text>
 <text x="64.008" y="48.768" size="1.016" layer="25" rot="R90">D0\\RX</text>
 <text x="61.5696" y="48.9204" size="1.016" layer="25" rot="R90">D1\\TX</text>
@@ -5601,10 +5585,4 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>

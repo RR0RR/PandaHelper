@@ -6218,6 +6218,61 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="frames">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="FRAME_A_L">
+<frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="0" y1="0" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="87.63" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="71.12" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="15.24" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="71.12" y2="0" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="5.08" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="71.12" y1="0" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="87.63" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="15.24" x2="0" y2="15.24" width="0.1016" layer="94"/>
+<wire x1="87.63" y1="5.08" x2="101.6" y2="5.08" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="5.08" x2="101.6" y2="0" width="0.1016" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="35.56" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="101.6" y2="22.86" width="0.1016" layer="94"/>
+<wire x1="0" y1="22.86" x2="0" y2="35.56" width="0.1016" layer="94"/>
+<wire x1="101.6" y1="22.86" x2="101.6" y2="15.24" width="0.1016" layer="94"/>
+<text x="1.27" y="1.27" size="2.54" layer="94">Date:</text>
+<text x="12.7" y="1.27" size="2.54" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="72.39" y="1.27" size="2.54" layer="94">Sheet:</text>
+<text x="86.36" y="1.27" size="2.54" layer="94">&gt;SHEET</text>
+<text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
+<text x="1.27" y="19.05" size="2.54" layer="94">TITLE:</text>
+<text x="1.27" y="11.43" size="2.54" layer="94">Document Number:</text>
+<text x="17.78" y="19.05" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FRAME_A_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt; A Size , 8 1/2 x 11 INCH, Landscape&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6246,17 +6301,20 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="rcl" deviceset="C-US" device="C0603K" value=".1uf"/>
 <part name="C3" library="rcl" deviceset="C-US" device="C0603K" value=".1uf"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="FRAME1" library="frames" deviceset="FRAME_A_L" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="22.987" y="74.93" size="1.778" layer="95">Atmega32U4 ISP Header</text>
-<text x="201.168" y="92.583" size="1.778" layer="95">Lattepanda header</text>
+<text x="5.207" y="107.95" size="3.81" layer="95">Atmega32U4 ISP Header</text>
+<text x="191.008" y="92.583" size="3.81" layer="95">Lattepanda header</text>
+<text x="94.107" y="105.41" size="3.81" layer="95">Shield pinout</text>
+<text x="198.628" y="41.783" size="3.81" layer="95">Power Regulator</text>
 </plain>
 <instances>
-<instance part="U$11" gate="G$1" x="156.351421875" y="36.802165625" rot="R90"/>
-<instance part="U1" gate="SEEEDUINO" x="113.03" y="35.56"/>
-<instance part="JP1" gate="G$1" x="34.29" y="66.04"/>
+<instance part="U$11" gate="G$1" x="166.511421875" y="62.202165625" rot="R90"/>
+<instance part="U1" gate="SEEEDUINO" x="123.19" y="60.96"/>
+<instance part="JP1" gate="G$1" x="29.21" y="96.52"/>
 <instance part="JP3" gate="A" x="210.82" y="72.39"/>
 <instance part="PC2" gate="J" x="29.21" y="39.37"/>
 <instance part="PC5" gate="J" x="43.18" y="39.37" rot="R180"/>
@@ -6274,23 +6332,25 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C2" gate="G$1" x="200.66" y="25.4"/>
 <instance part="C3" gate="G$1" x="254" y="25.4"/>
 <instance part="GND1" gate="1" x="220.98" y="12.7"/>
+<instance part="FRAME1" gate="G$1" x="-7.62" y="-50.8"/>
+<instance part="FRAME1" gate="G$2" x="165.1" y="-50.8"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<wire x1="105.41" y1="5.08" x2="104.129021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="104.129021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="115.57" y1="30.48" x2="114.289021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="114.289021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="GND@1"/>
 </segment>
 <segment>
-<wire x1="102.87" y1="5.08" x2="101.589021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="101.589021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="113.03" y1="30.48" x2="111.749021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="111.749021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="GND@2"/>
 </segment>
 <segment>
-<wire x1="151.13" y1="38.1" x2="156.351421875" y2="36.802165625" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="63.5" x2="166.511421875" y2="62.202165625" width="0.1524" layer="91"/>
 <pinref part="U$11" gate="G$1" pin="GND"/>
 <pinref part="U1" gate="SEEEDUINO" pin="GND"/>
 </segment>
@@ -6308,13 +6368,13 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="GND@0"/>
-<wire x1="95.25" y1="66.04" x2="93.98" y2="72.39" width="0.1524" layer="91"/>
-<label x="93.98" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="105.41" y1="91.44" x2="104.14" y2="97.79" width="0.1524" layer="91"/>
+<label x="104.14" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="41.91" y1="63.5" x2="49.53" y2="63.5" width="0.1524" layer="91"/>
-<label x="49.53" y="63.5" size="1.778" layer="95"/>
+<wire x1="36.83" y1="93.98" x2="44.45" y2="93.98" width="0.1524" layer="91"/>
+<label x="44.45" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="6.35" x2="26.67" y2="6.35" width="0.1524" layer="91"/>
@@ -6348,8 +6408,8 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="3V3" class="0">
 <segment>
-<wire x1="97.79" y1="5.08" x2="96.509021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="96.509021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="107.95" y1="30.48" x2="106.669021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="106.669021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="3V3"/>
 </segment>
 <segment>
@@ -6370,15 +6430,15 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="EXT_PWR" class="0">
 <segment>
-<wire x1="107.95" y1="5.08" x2="106.669021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="106.669021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="118.11" y1="30.48" x2="116.829021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="116.829021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="VIN"/>
 </segment>
 </net>
 <net name="5V" class="0">
 <segment>
-<wire x1="100.33" y1="5.08" x2="99.049021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="99.049021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="110.49" y1="30.48" x2="109.209021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="109.209021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="5V"/>
 </segment>
 <segment>
@@ -6395,17 +6455,17 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="41.91" y1="68.58" x2="49.53" y2="68.58" width="0.1524" layer="91"/>
-<label x="49.53" y="68.58" size="1.778" layer="95"/>
+<wire x1="36.83" y1="99.06" x2="44.45" y2="99.06" width="0.1524" layer="91"/>
+<label x="44.45" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="151.13" y1="43.18" x2="156.351421875" y2="41.882165625" width="0.1524" layer="91"/>
-<label x="157.621421875" y="41.882165625" size="1.27" layer="95" ratio="10"/>
+<wire x1="161.29" y1="68.58" x2="166.511421875" y2="67.282165625" width="0.1524" layer="91"/>
+<label x="167.781421875" y="67.282165625" size="1.27" layer="95" ratio="10"/>
 <pinref part="U1" gate="SEEEDUINO" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="91.429021875" y1="-0.967634375" x2="92.71" y2="5.08" width="0.1524" layer="91"/>
-<label x="91.429021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="101.589021875" y1="24.432365625" x2="102.87" y2="30.48" width="0.1524" layer="91"/>
+<label x="101.589021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="ADC7"/>
 </segment>
 <segment>
@@ -6429,12 +6489,12 @@ Source: AVX .. aphvc.pdf</description>
 <net name="MISO" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="26.67" y1="68.58" x2="21.336" y2="68.58" width="0.1524" layer="91"/>
-<label x="19.431" y="69.469" size="1.778" layer="95"/>
+<wire x1="21.59" y1="99.06" x2="16.256" y2="99.06" width="0.1524" layer="91"/>
+<label x="14.351" y="99.949" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="151.13" y1="30.48" x2="156.351421875" y2="29.182165625" width="0.1524" layer="91"/>
-<label x="157.621421875" y="29.182165625" size="1.27" layer="95" ratio="10"/>
+<wire x1="161.29" y1="55.88" x2="166.511421875" y2="54.582165625" width="0.1524" layer="91"/>
+<label x="167.781421875" y="54.582165625" size="1.27" layer="95" ratio="10"/>
 <pinref part="U1" gate="SEEEDUINO" pin="MISO"/>
 </segment>
 </net>
@@ -6447,8 +6507,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD0/D0/RX"/>
-<wire x1="133.35" y1="66.04" x2="132.08" y2="72.39" width="0.1524" layer="91"/>
-<label x="132.08" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="143.51" y1="91.44" x2="142.24" y2="97.79" width="0.1524" layer="91"/>
+<label x="142.24" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="48.26" x2="21.59" y2="48.26" width="0.1524" layer="91"/>
@@ -6465,8 +6525,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD1/D1/TX"/>
-<wire x1="130.81" y1="66.04" x2="129.54" y2="72.39" width="0.1524" layer="91"/>
-<label x="129.54" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="140.97" y1="91.44" x2="139.7" y2="97.79" width="0.1524" layer="91"/>
+<label x="139.7" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="45.72" x2="21.59" y2="45.72" width="0.1524" layer="91"/>
@@ -6483,13 +6543,13 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD2/D2/INT0"/>
-<wire x1="128.27" y1="66.04" x2="127" y2="72.39" width="0.1524" layer="91"/>
-<label x="127" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="138.43" y1="91.44" x2="137.16" y2="97.79" width="0.1524" layer="91"/>
+<label x="137.16" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="SDA"/>
-<wire x1="90.17" y1="66.04" x2="88.9" y2="72.39" width="0.1524" layer="91"/>
-<label x="88.9" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="100.33" y1="91.44" x2="99.06" y2="97.79" width="0.1524" layer="91"/>
+<label x="99.06" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="PC1" gate="J" pin="9"/>
@@ -6511,13 +6571,13 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD3/D3/INT1/PWM"/>
-<wire x1="125.73" y1="66.04" x2="124.46" y2="72.39" width="0.1524" layer="91"/>
-<label x="124.46" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="135.89" y1="91.44" x2="134.62" y2="97.79" width="0.1524" layer="91"/>
+<label x="134.62" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="SCL"/>
-<wire x1="87.63" y1="66.04" x2="86.36" y2="72.39" width="0.1524" layer="91"/>
-<label x="86.36" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="97.79" y1="91.44" x2="96.52" y2="97.79" width="0.1524" layer="91"/>
+<label x="96.52" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="PC1" gate="J" pin="10"/>
@@ -6539,8 +6599,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD4/D4"/>
-<wire x1="123.19" y1="66.04" x2="121.92" y2="72.39" width="0.1524" layer="91"/>
-<label x="121.92" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="133.35" y1="91.44" x2="132.08" y2="97.79" width="0.1524" layer="91"/>
+<label x="132.08" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="38.1" x2="21.59" y2="38.1" width="0.1524" layer="91"/>
@@ -6557,8 +6617,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD5/D5/PWM"/>
-<wire x1="120.65" y1="66.04" x2="119.38" y2="72.39" width="0.1524" layer="91"/>
-<label x="119.38" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="130.81" y1="91.44" x2="129.54" y2="97.79" width="0.1524" layer="91"/>
+<label x="129.54" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="35.56" x2="21.59" y2="35.56" width="0.1524" layer="91"/>
@@ -6575,8 +6635,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD6/D6/PWM"/>
-<wire x1="118.11" y1="66.04" x2="116.84" y2="72.39" width="0.1524" layer="91"/>
-<label x="116.84" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="128.27" y1="91.44" x2="127" y2="97.79" width="0.1524" layer="91"/>
+<label x="127" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="33.02" x2="21.59" y2="33.02" width="0.1524" layer="91"/>
@@ -6592,8 +6652,8 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="215.9" y="67.31"/>
 </segment>
 <segment>
-<wire x1="120.65" y1="5.08" x2="116.829021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="116.829021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="130.81" y1="30.48" x2="126.989021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="126.989021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="PC0/AD0/D14"/>
 </segment>
 <segment>
@@ -6611,8 +6671,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PB2/D10/SS/PWM"/>
-<wire x1="105.41" y1="66.04" x2="104.14" y2="72.39" width="0.1524" layer="91"/>
-<label x="104.14" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="115.57" y1="91.44" x2="114.3" y2="97.79" width="0.1524" layer="91"/>
+<label x="114.3" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="16.51" x2="26.67" y2="16.51" width="0.1524" layer="91"/>
@@ -6629,8 +6689,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PB1/D9/PWM"/>
-<wire x1="107.95" y1="66.04" x2="106.68" y2="72.39" width="0.1524" layer="91"/>
-<label x="106.68" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="118.11" y1="91.44" x2="116.84" y2="97.79" width="0.1524" layer="91"/>
+<label x="116.84" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="19.05" x2="26.67" y2="19.05" width="0.1524" layer="91"/>
@@ -6647,8 +6707,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PB0/D8"/>
-<wire x1="110.49" y1="66.04" x2="109.22" y2="72.39" width="0.1524" layer="91"/>
-<label x="109.22" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="120.65" y1="91.44" x2="119.38" y2="97.79" width="0.1524" layer="91"/>
+<label x="119.38" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="21.59" x2="26.67" y2="21.59" width="0.1524" layer="91"/>
@@ -6665,8 +6725,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PD7/D7"/>
-<wire x1="115.57" y1="66.04" x2="114.3" y2="72.39" width="0.1524" layer="91"/>
-<label x="114.3" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="125.73" y1="91.44" x2="124.46" y2="97.79" width="0.1524" layer="91"/>
+<label x="124.46" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="30.48" x2="21.59" y2="30.48" width="0.1524" layer="91"/>
@@ -6682,8 +6742,8 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="215.9" y="64.77"/>
 </segment>
 <segment>
-<wire x1="123.19" y1="5.08" x2="119.369021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="119.369021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="133.35" y1="30.48" x2="129.529021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="129.529021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="PC1/AD1/D15"/>
 </segment>
 <segment>
@@ -6700,8 +6760,8 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="215.9" y="62.23"/>
 </segment>
 <segment>
-<wire x1="125.73" y1="5.08" x2="121.909021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="121.909021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="135.89" y1="30.48" x2="132.069021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="132.069021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="PC2/AD2/D16"/>
 </segment>
 <segment>
@@ -6718,8 +6778,8 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="208.28" y="62.23"/>
 </segment>
 <segment>
-<wire x1="133.35" y1="5.08" x2="129.529021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="129.529021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="143.51" y1="30.48" x2="139.689021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="139.689021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="PC5/AD5/D19/SCL"/>
 </segment>
 <segment>
@@ -6736,8 +6796,8 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="208.28" y="64.77"/>
 </segment>
 <segment>
-<wire x1="130.81" y1="5.08" x2="126.989021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="126.989021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="140.97" y1="30.48" x2="137.149021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="137.149021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="PC4/AD4/D18/SDA"/>
 </segment>
 <segment>
@@ -6754,8 +6814,8 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="208.28" y="67.31"/>
 </segment>
 <segment>
-<wire x1="128.27" y1="5.08" x2="124.449021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="124.449021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="138.43" y1="30.48" x2="134.609021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="134.609021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="PC3/AD3/D17"/>
 </segment>
 <segment>
@@ -6773,8 +6833,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PB5/D13/SCK"/>
-<wire x1="97.79" y1="66.04" x2="96.52" y2="72.39" width="0.1524" layer="91"/>
-<label x="96.52" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="107.95" y1="91.44" x2="106.68" y2="97.79" width="0.1524" layer="91"/>
+<label x="106.68" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="8.89" x2="26.67" y2="8.89" width="0.1524" layer="91"/>
@@ -6791,8 +6851,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PB4/D12/MISO"/>
-<wire x1="100.33" y1="66.04" x2="99.06" y2="72.39" width="0.1524" layer="91"/>
-<label x="99.06" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="110.49" y1="91.44" x2="109.22" y2="97.79" width="0.1524" layer="91"/>
+<label x="109.22" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="11.43" x2="26.67" y2="11.43" width="0.1524" layer="91"/>
@@ -6809,8 +6869,8 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="PB3/D11/MOSI/PWM"/>
-<wire x1="102.87" y1="66.04" x2="101.6" y2="72.39" width="0.1524" layer="91"/>
-<label x="101.6" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="113.03" y1="91.44" x2="111.76" y2="97.79" width="0.1524" layer="91"/>
+<label x="111.76" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="13.97" x2="26.67" y2="13.97" width="0.1524" layer="91"/>
@@ -6821,41 +6881,41 @@ Source: AVX .. aphvc.pdf</description>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="41.91" y1="66.04" x2="49.53" y2="66.04" width="0.1524" layer="91"/>
-<label x="49.53" y="66.04" size="1.778" layer="95"/>
+<wire x1="36.83" y1="96.52" x2="44.45" y2="96.52" width="0.1524" layer="91"/>
+<label x="44.45" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="151.13" y1="40.64" x2="156.351421875" y2="39.342165625" width="0.1524" layer="91"/>
-<label x="157.621421875" y="39.342165625" size="1.27" layer="95" ratio="10"/>
+<wire x1="161.29" y1="66.04" x2="166.511421875" y2="64.742165625" width="0.1524" layer="91"/>
+<label x="167.781421875" y="64.742165625" size="1.27" layer="95" ratio="10"/>
 <pinref part="U1" gate="SEEEDUINO" pin="MOSI"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="26.67" y1="66.04" x2="21.59" y2="66.04" width="0.1524" layer="91"/>
-<label x="19.05" y="66.04" size="1.778" layer="95"/>
+<wire x1="21.59" y1="96.52" x2="16.51" y2="96.52" width="0.1524" layer="91"/>
+<label x="13.97" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="151.13" y1="33.02" x2="156.351421875" y2="31.722165625" width="0.1524" layer="91"/>
-<label x="157.621421875" y="31.722165625" size="1.27" layer="95" ratio="10"/>
+<wire x1="161.29" y1="58.42" x2="166.511421875" y2="57.122165625" width="0.1524" layer="91"/>
+<label x="167.781421875" y="57.122165625" size="1.27" layer="95" ratio="10"/>
 <pinref part="U1" gate="SEEEDUINO" pin="SCK"/>
 </segment>
 </net>
 <net name="RST" class="0">
 <segment>
 <pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="26.67" y1="63.5" x2="21.59" y2="63.5" width="0.1524" layer="91"/>
-<label x="19.05" y="63.5" size="1.778" layer="95"/>
+<wire x1="21.59" y1="93.98" x2="16.51" y2="93.98" width="0.1524" layer="91"/>
+<label x="13.97" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="95.25" y1="5.08" x2="93.969021875" y2="-0.967634375" width="0.1524" layer="91"/>
-<label x="93.969021875" y="-2.237634375" size="1.27" layer="95" ratio="10" rot="R270"/>
+<wire x1="105.41" y1="30.48" x2="104.129021875" y2="24.432365625" width="0.1524" layer="91"/>
+<label x="104.129021875" y="23.162365625" size="1.27" layer="95" ratio="10" rot="R270"/>
 <pinref part="U1" gate="SEEEDUINO" pin="RESET"/>
 </segment>
 <segment>
-<wire x1="151.13" y1="35.56" x2="156.351421875" y2="34.262165625" width="0.1524" layer="91"/>
-<label x="157.621421875" y="34.262165625" size="1.27" layer="95" ratio="10"/>
+<wire x1="161.29" y1="60.96" x2="166.511421875" y2="59.662165625" width="0.1524" layer="91"/>
+<label x="167.781421875" y="59.662165625" size="1.27" layer="95" ratio="10"/>
 <pinref part="U1" gate="SEEEDUINO" pin="RST"/>
 </segment>
 <segment>
@@ -6867,8 +6927,8 @@ Source: AVX .. aphvc.pdf</description>
 <net name="AREF" class="0">
 <segment>
 <pinref part="U1" gate="SEEEDUINO" pin="AREF"/>
-<wire x1="92.71" y1="66.04" x2="91.44" y2="72.39" width="0.1524" layer="91"/>
-<label x="91.44" y="72.39" size="1.778" layer="95" rot="R90"/>
+<wire x1="102.87" y1="91.44" x2="101.6" y2="97.79" width="0.1524" layer="91"/>
+<label x="101.6" y="97.79" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <label x="13.97" y="3.81" size="1.27" layer="95"/>
